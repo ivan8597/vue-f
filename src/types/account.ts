@@ -1,13 +1,13 @@
 export type AccountType = 'LDAP' | 'LOCAL'
 
-export interface LabelItem {
-  text: string
+export interface LabelItem { // Метка
+  text: string // Текст метки
 }
 
-export interface Account {
-  id: string
-  labels: LabelItem[]
-  type: AccountType
-  username: string
-  password: string | null
+export interface Account { // Аккаунт
+  id: string // Идентификатор аккаунта
+  labels: LabelItem[] // Метки аккаунта
+  type: AccountType // Тип аккаунта
+  username: string // Логин аккаунта
+  password: string | null // Пароль аккаунта
 } 
